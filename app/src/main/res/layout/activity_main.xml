@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.codingdemos.tablayout.MainActivity">
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:background="@color/colorPrimary"
+        app:tabSelectedTextColor="@android:color/white"
+        app:tabTextColor="@android:color/black">
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabChats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Настройки" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Управление" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabCalls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="РЕЖИМЫ" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabSet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ВАННА" />
+
+    </android.support.design.widget.TabLayout>
+
+
+</LinearLayout>
